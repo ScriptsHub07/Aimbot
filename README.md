@@ -1,55 +1,80 @@
-getgenv().Hide_UI = true 
-getgenv().BlackScreen = false
-_G.HopFruit1M = false
-_G.KaitunConfig = {
-    ["Actions Allowed"] = {
-      ["Awakening Fruit"] = true,
-      ["Shark Anchor"] = true,
-      ["Mirror Fractal"] = true,
-      ["Soul Guitar"] = true,
-      ["Pole (1st Form)"] = true,
-      ["Upgrading Race"] = true,
-      ["Farming Boss Drop When Maxed Level"] = false,
-      ["Rainbown Haki"] = true,
-      ["Cursed Dual Katana"] = true,
-      ["Buy accessories"] = true,
-      ["Buy Hakis"] = true,
-      ["Buy Guns"] = true,
-      ["Buy Swords"] = true,
-      ["Upgrade Weapons"] = true,
-      ["Farming Boss Drops When X2 Expired"] = true,
-      ["Mirage Puzzle"] = true,
-      ["Saber"] = true
-    },
-    ["Fps Boosting"] = true,
-    ["Fruit Snipping"] = true,
-    ["Fruit Eating"] = false,
-    ["High Ping Hop"] = true,
-    ["Fruit Choosen"] = {
-      ["T-Rex-T-Rex"] = true,
-      ["Shadow-Shadow"] = true,
-      ["Mammoth-Mammoth"] = true,
-      ["Gravity-Gravity"] = true,
-      ["Spirit-Spirit"] = true,
-      ["Dark-Dark"] = true,
-      ["Rocket-Rocket"] = true,
-      ["Control-Control"] = true,
-      ["Dough-Dough"] = true,
-      ["Leopard-Leopard"] = true,
-      ["Venom-Venom"] = true,
-      ["Dragon-Dragon"] = true,
-      ["Diamond-Diamond"] = true,
-      ["Kitsune-Kitsune"] = true,
-      ["Spring-Spring"] = true
-    },
-    ["Player Nearing Hop"] = true,
-    ["Allow Stored"] = true,
-    ["Race Choosen"] = {
-      ["Human"] = true
-    },
-    ["Race Snipping"] = true,
-    ["Tween Speed"] = 350,
-    ["Same Y Tween"] = true,
+local KeyGuardLibrary = loadstring(game:HttpGet("https://cdn.keyguardian.org/library/v1.0.0.lua"))()
+local trueData = "0dec437f5e0549c0969a27c4349f93e2"
+local falseData = "918c5123f3e6431494c27aa884c6e57e"
+
+KeyGuardLibrary.Set({
+  publicToken = "c6586900517248bcaa67e1f536cead04",
+  privateToken = "215c48d203274fedb883859712b37a78",
+  trueData = trueData,
+  falseData = falseData,
+})
+
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+local key = ""
+
+local Window = Fluent:CreateWindow({
+    Title = "Key System",
+    SubTitle = "DARKX",
+    TabWidth = 160,
+    Size = UDim2.fromOffset(580, 340),
+    Acrylic = false,
+    Theme = "Dark",
+    MinimizeKey = Enum.KeyCode.LeftControl
+})
+
+local Tabs = {
+    KeySys = Window:AddTab({ Title = "Key System", Icon = "key" }),
+    Settings = Window:AddTab({ Title = "Admin Key", Icon = "key" })
 }
-loadstring(game:HttpGet('https://raw.githubusercontent.com/memaybeohub/NewPage/main/Kaitun.lua'))()
-ScreenGui:Destroy()
+
+local Entkey = Tabs.KeySys:AddInput("Input", {
+    Title = "Enter Key",
+    Description = "Enter Key Here",
+    Default = "",
+    Placeholder = "Enter key…",
+    Numeric = false,
+    Finished = false,
+    Callback = function(Value)
+        key = Value
+    end
+})
+
+local Checkkey = Tabs.KeySys:AddButton({
+    Title = "Check Key",
+    Description = "Enter Key before pressing this button",
+    Callback = function()
+        local response = KeyGuardLibrary.validateDefaultKey(key)
+        if response == trueData then
+           print("Key is valid")
+           loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptsHub07/VM/refs/heads/main/test"))()
+        else
+           print("Key is invalid")
+        end
+    end
+})
+
+local Getkey = Tabs.KeySys:AddButton({
+    Title = "Get Key",
+    Description = "Get Key here",
+    Callback = function()
+       setclipboard(KeyGuardLibrary.getLink())
+    end
+})
+
+local Entkey = Tabs.Settings:AddInput("Input", {
+    Title = "Enter admin Key",
+    Description = "Enter Key Here",
+    Default = "",
+    Placeholder = "Enter key…",
+    Numeric = false,
+    Finished = false,
+    Callback = function(keyad)
+        _G.key = keyad
+    end
+})
+
+if keyad == "WzAdmin" then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptsHub07/VM/refs/heads/main/test"))()
+end
+
+Window:SelectTab(1)
