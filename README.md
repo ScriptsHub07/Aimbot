@@ -73,7 +73,7 @@ local Entkey = Tabs.Settings:AddInput("Input", {
     end
 })
 
-local Checkkey = Tabs.KeySys:AddButton({
+local key = Tabs.Settings:AddButton({
     Title = "Check Key",
     Description = "Enter Key before pressing this button",
     Callback = function()
