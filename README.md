@@ -73,8 +73,14 @@ local Entkey = Tabs.Settings:AddInput("Input", {
     end
 })
 
-if keyad == "WzAdmin" then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptsHub07/VM/refs/heads/main/test"))()
-end
+local Checkkey = Tabs.KeySys:AddButton({
+    Title = "Check Key",
+    Description = "Enter Key before pressing this button",
+    Callback = function()
+        if keyad == "WzAdmin" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptsHub07/VM/refs/heads/main/test"))()
+        end
+    end
+})
 
 Window:SelectTab(1)
