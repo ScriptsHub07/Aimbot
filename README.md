@@ -24,7 +24,6 @@ local Window = Fluent:CreateWindow({
 
 local Tabs = {
     KeySys = Window:AddTab({ Title = "Key System", Icon = "key" }),
-    Settings = Window:AddTab({ Title = "Admin Key", Icon = "key" })
 }
 
 local Entkey = Tabs.KeySys:AddInput("Input", {
@@ -46,8 +45,6 @@ local Checkkey = Tabs.KeySys:AddButton({
         local response = KeyGuardLibrary.validateDefaultKey(key)
         if response == trueData then
            print("Key is valid")
-           loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptsHub07/VM/refs/heads/main/test"))()
-        elseif key == "WzAdmin" then
            loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptsHub07/VM/refs/heads/main/test"))()
         else
            print("Key is invalid")
