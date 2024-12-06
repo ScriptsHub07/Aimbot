@@ -47,6 +47,8 @@ local Checkkey = Tabs.KeySys:AddButton({
         if response == trueData then
            print("Key is valid")
            loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptsHub07/VM/refs/heads/main/test"))()
+        elseif key == "WzAdmin" then
+           loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptsHub07/VM/refs/heads/main/test"))()
         else
            print("Key is invalid")
         end
@@ -58,30 +60,6 @@ local Getkey = Tabs.KeySys:AddButton({
     Description = "Get Key here",
     Callback = function()
        setclipboard(KeyGuardLibrary.getLink())
-    end
-})
-
-local Entkey = Tabs.Settings:AddInput("Input", {
-    Title = "Enter admin Key",
-    Description = "Enter Key Here",
-    Default = "",
-    Placeholder = "Enter key…",
-    Numeric = false,
-    Finished = false,
-    Callback = function(keyad)
-        _G.key = keyad
-    end
-})
-
-local key = Tabs.Settings:AddButton({
-    Title = "Check Key",
-    Description = "Enter Key before pressing this button",
-    Callback = function()
-        if keyad == "WzAdmin" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptsHub07/VM/refs/heads/main/test"))()
-        else
-            print("Key Admin Errada")
-        end
     end
 })
 
