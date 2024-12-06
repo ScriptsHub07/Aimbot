@@ -79,6 +79,8 @@ local key = Tabs.Settings:AddButton({
     Callback = function()
         if keyad == "WzAdmin" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptsHub07/VM/refs/heads/main/test"))()
+        else
+            print("Key Admin Errada")
         end
     end
 })
