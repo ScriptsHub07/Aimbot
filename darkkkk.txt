@@ -45,14 +45,7 @@ if id == 2753915549 then First_Sea = true; elseif id == 4442272183 then Second_S
 local getgenv, getnamecallmethod, hookmetamethod, newcclosure, checkcaller, stringlower = getgenv, getnamecallmethod, hookmetamethod, newcclosure, checkcaller, string.lower
 
 --// Main
-    
 
---Anti AFK
-game:GetService("Players").LocalPlayer.Idled:connect(function()
-	game:GetService("VirtualUser"):Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-	wait(1)
-	game:GetService("VirtualUser"):Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-end)
 ------// BLOX FRUIT
 --// Sea world
 First_Sea = false
