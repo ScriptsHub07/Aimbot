@@ -60,7 +60,7 @@ end
 
 --// Check Quest
 function CheckLevel()
-local Lv = game:GetService("Players").LocalPlayer.Data.Level.Value
+local Lv = game:GetService("Players").LocalPlayer.Character.Level.Value
 if First_Sea then
 if Lv == 1 or Lv <= 9 or SelectMonster == "Bandit" or SelectArea == '' then -- Bandit
 Ms = "Bandit"
@@ -898,7 +898,7 @@ if Third_Sea then
 if SelectBoss == "Stone" then
 BossMon = "Stone"
 NameBoss = 'Stone'
-NameQuestBoss = "PiratePortQuest"
+NameQuestBoss = "Pirate Port Quest Giver"
 QuestLvBoss = 3
 RewardBoss = "Reward:\n$25,000\n40,000,000 Exp."
 CFrameQBoss = CFrame.new(-289.76705932617, 43.819011688232, 5579.9384765625)
@@ -906,7 +906,7 @@ CFrameBoss = CFrame.new(-1027.6512451172, 92.404174804688, 6578.8530273438)
 elseif SelectBoss == "Island Empress" then
 BossMon = "Island Empress"
 NameBoss = 'Island Empress'
-NameQuestBoss = "AmazonQuest2"
+NameQuestBoss = "Amazon Quest Giver 2"
 QuestLvBoss = 3
 RewardBoss = "Reward:\n$30,000\n52,000,000 Exp."
 CFrameQBoss = CFrame.new(5445.9541015625, 601.62945556641, 751.43792724609)
