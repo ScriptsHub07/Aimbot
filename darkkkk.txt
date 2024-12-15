@@ -712,7 +712,7 @@ if First_Sea then
 if SelectBoss == "The Gorilla King" then
 BossMon = "The Gorilla King"
 NameBoss = 'The Gorrila King'
-NameQuestBoss = "JungleQuest"
+NameQuestBoss = "Adventurer"
 QuestLvBoss = 3
 RewardBoss = "Reward:\n$2,000\n7,000 Exp."
 CFrameQBoss = CFrame.new(-1601.6553955078, 36.85213470459, 153.38809204102)
@@ -720,7 +720,7 @@ CFrameBoss = CFrame.new(-1088.75977, 8.13463783, -488.559906, -0.707134247, 0, 0
 elseif SelectBoss == "Bobby" then
 BossMon = "Bobby"
 NameBoss = 'Bobby'
-NameQuestBoss = "BuggyQuest1"
+NameQuestBoss = "Pirate Adventurer"
 QuestLvBoss = 3
 RewardBoss = "Reward:\n$8,000\n35,000 Exp."
 CFrameQBoss = CFrame.new(-1140.1761474609, 4.752049446106, 3827.4057617188)
@@ -732,7 +732,7 @@ CFrameBoss = CFrame.new(-784.89715576172, 72.427383422852, 1603.5822753906)
 elseif SelectBoss == "Yeti" then
 BossMon = "Yeti"
 NameBoss = 'Yeti'
-NameQuestBoss = "SnowQuest"
+NameQuestBoss = "Villager"
 QuestLvBoss = 3
 RewardBoss = "Reward:\n$10,000\n180,000 Exp."
 CFrameQBoss = CFrame.new(1386.8073730469, 87.272789001465, -1298.3576660156)
@@ -744,7 +744,7 @@ CFrameBoss = CFrame.new(-2844.7307128906, 7.4180502891541, 5356.6723632813)
 elseif SelectBoss == "Vice Admiral" then
 BossMon = "Vice Admiral"
 NameBoss = 'Vice Admiral'
-NameQuestBoss = "MarineQuest2"
+NameQuestBoss = "Marine"
 QuestLvBoss = 2
 RewardBoss = "Reward:\n$10,000\n180,000 Exp."
 CFrameQBoss = CFrame.new(-5036.2465820313, 28.677835464478, 4324.56640625)
@@ -756,7 +756,7 @@ CFrameBoss = CFrame.new(-1458.89502, 29.8870335, -50.633564)
 elseif SelectBoss == "Warden" then
 BossMon = "Warden"
 NameBoss = 'Warden'
-NameQuestBoss = "ImpelQuest"
+NameQuestBoss = "Head Jailer"
 QuestLvBoss = 1
 RewardBoss = "Reward:\n$6,000\n850,000 Exp."
 CFrameBoss = CFrame.new(5278.04932, 2.15167475, 944.101929, 0.220546961, -4.49946401e-06, 0.975376427, -1.95412576e-05, 1, 9.03162072e-06, -0.975376427, -2.10519756e-05, 0.220546961)
@@ -764,7 +764,7 @@ CFrameQBoss = CFrame.new(5191.86133, 2.84020686, 686.438721, -0.731384635, 0, 0.
 elseif SelectBoss == "Chief Warden" then
 BossMon = "Chief Warden"
 NameBoss = 'Chief Warden'
-NameQuestBoss = "ImpelQuest"
+NameQuestBoss = "Head Jailer"
 QuestLvBoss = 2
 RewardBoss = "Reward:\n$10,000\n1,000,000 Exp."
 CFrameBoss = CFrame.new(5206.92578, 0.997753382, 814.976746, 0.342041343, -0.00062915677, 0.939684749, 0.00191645394, 0.999998152, -2.80422337e-05, -0.939682961, 0.00181045406, 0.342041939)
@@ -772,7 +772,7 @@ CFrameQBoss = CFrame.new(5191.86133, 2.84020686, 686.438721, -0.731384635, 0, 0.
 elseif SelectBoss == "Swan" then
 BossMon = "Swan"
 NameBoss = 'Swan'
-NameQuestBoss = "ImpelQuest"
+NameQuestBoss = "Head Jailer"
 QuestLvBoss = 3
 RewardBoss = "Reward:\n$15,000\n1,600,000 Exp."
 CFrameBoss = CFrame.new(5325.09619, 7.03906584, 719.570679, -0.309060812, 0, 0.951042235, 0, 1, 0, -0.951042235, 0, -0.309060812)
@@ -780,7 +780,7 @@ CFrameQBoss = CFrame.new(5191.86133, 2.84020686, 686.438721, -0.731384635, 0, 0.
 elseif SelectBoss == "Magma Admiral" then
 BossMon = "Magma Admiral"
 NameBoss = 'Magma Admiral'
-NameQuestBoss = "MagmaQuest"
+NameQuestBoss = "The Mayor"
 QuestLvBoss = 3
 RewardBoss = "Reward:\n$15,000\n2,800,000 Exp."
 CFrameQBoss = CFrame.new(-5314.6220703125, 12.262420654297, 8517.279296875)
@@ -788,7 +788,7 @@ CFrameBoss = CFrame.new(-5765.8969726563, 82.92064666748, 8718.3046875)
 elseif SelectBoss == "Fishman Lord" then
 BossMon = "Fishman Lord"
 NameBoss = 'Fishman Lord'
-NameQuestBoss = "FishmanQuest"
+NameQuestBoss = "King Neptune"
 QuestLvBoss = 3
 RewardBoss = "Reward:\n$15,000\n4,000,000 Exp."
 CFrameQBoss = CFrame.new(61122.65234375, 18.497442245483, 1569.3997802734)
@@ -796,7 +796,7 @@ CFrameBoss = CFrame.new(61260.15234375, 30.950881958008, 1193.4329833984)
 elseif SelectBoss == "Wysper" then
 BossMon = "Wysper"
 NameBoss = 'Wysper'
-NameQuestBoss = "SkyExp1Quest"
+NameQuestBoss = "Sky Adventurer"
 QuestLvBoss = 3
 RewardBoss = "Reward:\n$15,000\n4,800,000 Exp."
 CFrameQBoss = CFrame.new(-7861.947265625, 5545.517578125, -379.85974121094)
@@ -804,7 +804,7 @@ CFrameBoss = CFrame.new(-7866.1333007813, 5576.4311523438, -546.74816894531)
 elseif SelectBoss == "Thunder God" then
 BossMon = "Thunder God"
 NameBoss = 'Thunder God'
-NameQuestBoss = "SkyExp2Quest"
+NameQuestBoss = "Sky Quest Giver 2"
 QuestLvBoss = 3
 RewardBoss = "Reward:\n$20,000\n5,800,000 Exp."
 CFrameQBoss = CFrame.new(-7903.3828125, 5635.9897460938, -1410.923828125)
@@ -812,7 +812,7 @@ CFrameBoss = CFrame.new(-7994.984375, 5761.025390625, -2088.6479492188)
 elseif SelectBoss == "Cyborg" then
 BossMon = "Cyborg"
 NameBoss = 'Cyborg'
-NameQuestBoss = "FountainQuest"
+NameQuestBoss = "Freezeburg Quest Giver"
 QuestLvBoss = 3
 RewardBoss = "Reward:\n$20,000\n7,500,000 Exp."
 CFrameQBoss = CFrame.new(5258.2788085938, 38.526931762695, 4050.044921875)
