@@ -36,13 +36,8 @@ OrionLib:MakeNotification(
     )
 _G.lakala = true
 
-setclipboard("Tsuo Hub")
-
-
 local id = game.PlaceId
 if id == 2753915549 then First_Sea = true; elseif id == 4442272183 then Second_Sea = true; elseif id == 7449423635 then Third_Sea = true; else game:Shutdown() end;
-
---// Main
 
 ------// BLOX FRUIT
 --// Sea world
@@ -60,7 +55,7 @@ end
 
 --// Check Quest
 function CheckLevel()
-local Lv = game:GetService("Players").LocalPlayer.Data.Level.Value
+local Lv = game.Players.LocalPlayer.Data.Level.Value
 if First_Sea then
 if Lv == 1 or Lv <= 9 or SelectMonster == "Bandit" or SelectArea == '' then -- Bandit
 Ms = "Bandit"
@@ -261,105 +256,105 @@ end
 if Second_Sea then
 if Lv == 700 or Lv <= 724 or SelectMonster == "Raider" or SelectArea == 'Area 1' then -- Raider
 Ms = "Raider"
-NameQuest = "Area1Quest"
+NameQuest = "Area 1 Quest Giver"
 QuestLv = 1
 NameMon = "Raider"
 CFrameQ = CFrame.new(-427.72567749023, 72.99634552002, 1835.9426269531)
 CFrameMon = CFrame.new(68.874565124512, 93.635643005371, 2429.6752929688)
 elseif Lv == 725 or Lv <= 774 or SelectMonster == "Mercenary" or SelectArea == 'Area 1' then -- Mercenary
 Ms = "Mercenary"
-NameQuest = "Area1Quest"
+NameQuest = "Area 1 Quest Giver"
 QuestLv = 2
 NameMon = "Mercenary"
 CFrameQ = CFrame.new(-427.72567749023, 72.99634552002, 1835.9426269531)
 CFrameMon = CFrame.new(-864.85009765625, 122.47104644775, 1453.1505126953)
 elseif Lv == 775 or Lv <= 799 or SelectMonster == "Swan Pirate" or SelectArea == 'Area 2' then -- Swan Pirate
 Ms = "Swan Pirate"
-NameQuest = "Area2Quest"
+NameQuest = "Area 2 Quest Giver"
 QuestLv = 1
 NameMon = "Swan Pirate"
 CFrameQ = CFrame.new(635.61151123047, 73.096351623535, 917.81298828125)
 CFrameMon = CFrame.new(1065.3669433594, 137.64012145996, 1324.3798828125)
 elseif Lv == 800 or Lv <= 874 or SelectMonster == "Factory Staff" or SelectArea == 'Area 2' then -- Factory Staff
 Ms = "Factory Staff"
-NameQuest = "Area2Quest"
+NameQuest = "Area 2 Quest Giver"
 QuestLv = 2
 NameMon = "Factory Staff"
 CFrameQ = CFrame.new(635.61151123047, 73.096351623535, 917.81298828125)
 CFrameMon = CFrame.new(533.22045898438, 128.46876525879, 355.62615966797)
 elseif Lv == 875 or Lv <= 899 or SelectMonster == "Marine Lieutenan" or SelectArea == 'Marine' then -- Marine Lieutenant
 Ms = "Marine Lieutenant"
-NameQuest = "MarineQuest3"
+NameQuest = "Marine Quest Giver"
 QuestLv = 1
 NameMon = "Marine Lieutenant"
 CFrameQ = CFrame.new(-2440.9934082031, 73.04190826416, -3217.7082519531)
 CFrameMon = CFrame.new(-2489.2622070313, 84.613594055176, -3151.8830566406)
 elseif Lv == 900 or Lv <= 949 or SelectMonster == "Marine Captain" or SelectArea == 'Marine' then -- Marine Captain
 Ms = "Marine Captain"
-NameQuest = "MarineQuest3"
+NameQuest = "Marine Quest Giver"
 QuestLv = 2
 NameMon = "Marine Captain"
 CFrameQ = CFrame.new(-2440.9934082031, 73.04190826416, -3217.7082519531)
 CFrameMon = CFrame.new(-2335.2026367188, 79.786659240723, -3245.8674316406)
 elseif Lv == 950 or Lv <= 974 or SelectMonster == "Zombie" or SelectArea == 'Zombie' then -- Zombie
 Ms = "Zombie"
-NameQuest = "ZombieQuest"
+NameQuest = "Graveyard Quest Giver"
 QuestLv = 1
 NameMon = "Zombie"
 CFrameQ = CFrame.new(-5494.3413085938, 48.505931854248, -794.59094238281)
 CFrameMon = CFrame.new(-5536.4970703125, 101.08577728271, -835.59075927734)
 elseif Lv == 975 or Lv <= 999 or SelectMonster == "Vampire" or SelectArea == 'Zombie' then -- Vampire
 Ms = "Vampire"
-NameQuest = "ZombieQuest"
+NameQuest = "Graveyard Quest Giver"
 QuestLv = 2
 NameMon = "Vampire"
 CFrameQ = CFrame.new(-5494.3413085938, 48.505931854248, -794.59094238281)
 CFrameMon = CFrame.new(-5806.1098632813, 16.722528457642, -1164.4384765625)
 elseif Lv == 1000 or Lv <= 1049 or SelectMonster == "Snow Trooper" or SelectArea == 'Snow Mountain' then -- Snow Trooper
 Ms = "Snow Trooper"
-NameQuest = "SnowMountainQuest"
+NameQuest = "Snow Quest Giver"
 QuestLv = 1
 NameMon = "Snow Trooper"
 CFrameQ = CFrame.new(607.05963134766, 401.44781494141, -5370.5546875)
 CFrameMon = CFrame.new(535.21051025391, 432.74209594727, -5484.9165039063)
 elseif Lv == 1050 or Lv <= 1099 or SelectMonster == "Winter Warrior" or SelectArea == 'Snow Mountain' then -- Winter Warrior
 Ms = "Winter Warrior"
-NameQuest = "SnowMountainQuest"
+NameQuest = "Snow Quest Giver"
 QuestLv = 2
 NameMon = "Winter Warrior"
 CFrameQ = CFrame.new(607.05963134766, 401.44781494141, -5370.5546875)
 CFrameMon = CFrame.new(1234.4449462891, 456.95419311523, -5174.130859375)
 elseif Lv == 1100 or Lv <= 1124 or SelectMonster == "Lab Subordinate" or SelectArea == 'Ice Fire' then -- Lab Subordinate
 Ms = "Lab Subordinate"
-NameQuest = "IceSideQuest"
+NameQuest = "Ice Quest Giver"
 QuestLv = 1
 NameMon = "Lab Subordinate"
 CFrameQ = CFrame.new(-6061.841796875, 15.926671981812, -4902.0385742188)
 CFrameMon = CFrame.new(-5720.5576171875, 63.309471130371, -4784.6103515625)
 elseif Lv == 1125 or Lv <= 1174 or SelectMonster == "Horned Warrior" or SelectArea == 'Ice Fire' then -- Horned Warrior
 Ms = "Horned Warrior"
-NameQuest = "IceSideQuest"
+NameQuest = "Ice Quest Giver"
 QuestLv = 2
 NameMon = "Horned Warrior"
 CFrameQ = CFrame.new(-6061.841796875, 15.926671981812, -4902.0385742188)
 CFrameMon = CFrame.new(-6292.751953125, 91.181983947754, -5502.6499023438)
 elseif Lv == 1175 or Lv <= 1199 or SelectMonster == "Magma Ninja" or SelectArea == 'Ice Fire' then -- Magma Ninja
 Ms = "Magma Ninja"
-NameQuest = "FireSideQuest"
+NameQuest = "Fire Quest Giver"
 QuestLv = 1
 NameMon = "Magma Ninja"
 CFrameQ = CFrame.new(-5429.0473632813, 15.977565765381, -5297.9614257813)
 CFrameMon = CFrame.new(-5461.8388671875, 130.36347961426, -5836.4702148438)
 elseif Lv == 1200 or Lv <= 1249 or SelectMonster == "Lava Pirate" or SelectArea == 'Ice Fire' then -- Lava Pirate
 Ms = "Lava Pirate"
-NameQuest = "FireSideQuest"
+NameQuest = "Fire Quest Giver"
 QuestLv = 2
 NameMon = "Lava Pirate"
 CFrameQ = CFrame.new(-5429.0473632813, 15.977565765381, -5297.9614257813)
 CFrameMon = CFrame.new(-5251.1889648438, 55.164535522461, -4774.4096679688)
 elseif Lv == 1250 or Lv <= 1274 or SelectMonster == "Ship Deckhand" or SelectArea == 'Ship' then -- Ship Deckhand
 Ms = "Ship Deckhand"
-NameQuest = "ShipQuest1"
+NameQuest = "Rear Crew Quest Giver"
 QuestLv = 1
 NameMon = "Ship Deckhand"
 CFrameQ = CFrame.new(1040.2927246094, 125.08293151855, 32911.0390625)
@@ -369,7 +364,7 @@ game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntranc
 end
 elseif Lv == 1275 or Lv <= 1299 or SelectMonster == "Ship Engineer" or SelectArea == 'Ship' then -- Ship Engineer
 Ms = "Ship Engineer"
-NameQuest = "ShipQuest1"
+NameQuest = "Rear Crew Quest Giver"
 QuestLv = 2
 NameMon = "Ship Engineer"
 CFrameQ = CFrame.new(1040.2927246094, 125.08293151855, 32911.0390625)
@@ -379,7 +374,7 @@ game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntranc
 end
 elseif Lv == 1300 or Lv <= 1324 or SelectMonster == "Ship Steward" or SelectArea == 'Ship' then -- Ship Steward
 Ms = "Ship Steward"
-NameQuest = "ShipQuest2"
+NameQuest = "Front Crew Quest Giver"
 QuestLv = 1
 NameMon = "Ship Steward"
 CFrameQ = CFrame.new(971.42065429688, 125.08293151855, 33245.54296875)
@@ -389,7 +384,7 @@ game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntranc
 end
 elseif Lv == 1325 or Lv <= 1349 or SelectMonster == "Ship Officer" or SelectArea == 'Ship' then -- Ship Officer
 Ms = "Ship Officer"
-NameQuest = "ShipQuest2"
+NameQuest = "Front Crew Quest Giver"
 QuestLv = 2
 NameMon = "Ship Officer"
 CFrameQ = CFrame.new(971.42065429688, 125.08293151855, 33245.54296875)
@@ -399,7 +394,7 @@ game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntranc
 end
 elseif Lv == 1350 or Lv <= 1374 or SelectMonster == "Arctic Warrior" or SelectArea == 'Frost' then -- Arctic Warrior
 Ms = "Arctic Warrior"
-NameQuest = "FrostQuest"
+NameQuest = "Snow Quest Giver"
 QuestLv = 1
 NameMon = "Arctic Warrior"
 CFrameQ = CFrame.new(5668.1372070313, 28.202531814575, -6484.6005859375)
@@ -409,7 +404,7 @@ game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntranc
 end
 elseif Lv == 1375 or Lv <= 1424 or SelectMonster == "Snow Lurker" or SelectArea == 'Frost' then -- Snow Lurker
 Ms = "Snow Lurker"
-NameQuest = "FrostQuest"
+NameQuest = "Snow Quest Giver"
 QuestLv = 2
 NameMon = "Snow Lurker"
 CFrameQ = CFrame.new(5668.1372070313, 28.202531814575, -6484.6005859375)
@@ -2739,20 +2734,6 @@ end)
         end
         end)
 
-
-
-
-        local ToggleCandy = Tabs.Main:AddToggle("ToggleCandy", {Title = "Auto Farm Candy ( Only Max Level ) ",Description = "", Default = false })
-        ToggleCandy:OnChanged(function(Value)
-           _G.AutoCandy = Value
-           if Value == false then
-            wait()
-            Tween(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame)
-            wait()
-        end
-        end)
-        Options.ToggleCandy:SetValue(false)
-
 		local CandyPos = CFrame.new(-16603.197265625, 130.3873748779297, 1087.16455078125)
 		spawn(function()
 				  while wait() do 
@@ -2867,8 +2848,7 @@ end)
                         end
                     else
                         toTarget(CFrameCastleRaid)
-                     
-                      
+            
                     end
                 end)
             end
@@ -4122,8 +4102,8 @@ spawn(function()
                     end
                 end)
             end
-    end
-      end)
+        end
+    end)
 
 
     local AutoElite = Tabs.Main:AddSection("Elite Hunter Farm")
@@ -4498,6 +4478,7 @@ if Third_Sea then
             end
         end
     end)
+end
 	
 	
 	spawn(function()
@@ -4596,135 +4577,6 @@ if Third_Sea then
                 end)
             end
         end
-
-
-if Second_Sea then
-        local ToggleFactory = Tabs.Main:AddToggle("ToggleFactory", {Title = "Auto Farm Factory",Description = "", Default = false })
-        ToggleFactory:OnChanged(function(Value)
-            _G.Factory = Value
-        end)
-        Options.ToggleFactory:SetValue(false)
-
-        spawn(function()
-            while wait() do
-                if _G.Factory then
-                    if game.Workspace.Enemies:FindFirstChild("Core") then
-                        for i,v in pairs(game.Workspace.Enemies:GetChildren()) do
-                            if v.Name == "Core" and v.Humanoid.Health > 0 then
-                                repeat wait(_G.Fast_Delay)
-                                    AttackNoCoolDown()
-                                    repeat Tween(CFrame.new(448.46756, 199.356781, -441.389252))
-                                        wait()
-                                    until not _G.Factory or (game.Players.LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(448.46756, 199.356781, -441.389252)).Magnitude <= 10
-                                    EquipTool(SelectWeapon)
-                                    AutoHaki()
-                                    Tween(v.HumanoidRootPart.CFrame * CFrame.new(posX,posY,posZ))
-                                    v.HumanoidRootPart.Size = Vector3.new(60, 60, 60)
-                                    v.HumanoidRootPart.Transparency = 1
-                                    v.Humanoid.JumpPower = 0
-                                    v.Humanoid.WalkSpeed = 0
-                                    v.HumanoidRootPart.CanCollide = false
-                                    FarmPos = v.HumanoidRootPart.CFrame
-                                    MonFarm = v.Name
-                                    --Click
-                                until not v.Parent or v.Humanoid.Health <= 0  or _G.Factory == false
-                            end
-                        end
-                    elseif game.ReplicatedStorage:FindFirstChild("Core") then
-                        repeat Tween(CFrame.new(448.46756, 199.356781, -441.389252))
-                            wait()
-                        until not _G.Factory or (game.Players.LocalPlayer.Character.HumanoidRootPart.Position-Vector3.new(448.46756, 199.356781, -441.389252)).Magnitude <= 10
-                    end
-        
-                end
-            end
-        end)
-
-    end
-
-        if Third_Sea then
-    local ToggleCakeV2 = Tabs.Main:AddToggle("ToggleCakeV2", {Title = "Kill Dought KingV2",Description = "", Default = false })
-    ToggleCakeV2:OnChanged(function(Value)
-        _G.AutoCakeV2 = Value
-    end)
-        Options.ToggleCakeV2:SetValue(false)
-end
-    spawn(function()
-        while wait() do
-            if _G.AutoCakeV2 then
-                pcall(function()
-                    if game:GetService("Workspace").Enemies:FindFirstChild("Dough King") then
-                        for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
-                            if v.Name == "Dough King" then
-                                if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
-                                    repeat wait(_G.Fast_Delay)
-                                        AttackNoCoolDown()
-                                        AutoHaki()
-                                        EquipTool(SelectWeapon)
-                                        v.HumanoidRootPart.CanCollide = false
-                                        v.Humanoid.WalkSpeed = 0
-                                        v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
-                                    until not _G.AutoCakeV2 or not v.Parent or v.Humanoid.Health <= 0
-                                end
-                            end
-                        end
-                    else
-                        if game:GetService("ReplicatedStorage"):FindFirstChild("Dough King") then
-                     Tween(game:GetService("ReplicatedStorage"):FindFirstChild("Dough King").HumanoidRootPart.CFrame * CFrame.new(2,20,2))
-                        else
-                        end
-            
-                    end
-                end)
-            end
-        end
-    end)
-
-    
-if Second_Sea or Third_Sea then
-    local ToggleHakiColor = Tabs.Main:AddToggle("ToggleHakiColor", {Title = "Buy Haki Color",Description = "",Default = false })
-    ToggleHakiColor:OnChanged(function(Value)
-        _G.Auto_Buy_Enchancement = Value
-    end)
-        Options.ToggleHakiColor:SetValue(false)
-    spawn(function()
-            while wait() do
-                if _G.Auto_Buy_Enchancement then
-                    local args = {
-                        [1] = "ColorsDealer",
-                        [2] = "2"
-                    }
-                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
-                end 
-            end
-        end)
-end
-
-if Second_Sea then
-    local ToggleSwordLengend = Tabs.Main:AddToggle("ToggleSwordLengend", {Title = "Buy Sword Lengendary",Description = "",Default = false })
-    ToggleSwordLengend:OnChanged(function(Value)
-        _G.BuyLengendSword = Value
-    end)
-        Options.ToggleSwordLengend:SetValue(false)
-
-        spawn(function()
-            while wait(.1) do
-                pcall(function()
-                    if _G.BuyLengendSword or Triple_A then
-                        local args = {
-                            [1] = "LegendarySwordDealer",
-                            [2] = "2"
-                        }
-                        -- Triple_A
-                        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
-                    else
-                        wait(2)
-                    end
-                end)
-            end
-        end)
-    end
 
 --Setting
 local SettingFarm = Tabs.Setting:AddSection("Farming")
@@ -7311,8 +7163,6 @@ function NoFog()
         end
     end
 end
-
-
 --Hop
 
 
