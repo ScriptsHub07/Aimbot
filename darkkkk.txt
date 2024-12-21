@@ -277,7 +277,7 @@ function Library:CreateWindow(hubname)
     toggle_Image.BorderColor3 = Color3.fromRGB(0, 0, 0)
     toggle_Image.BorderSizePixel = 0
     toggle_Image.Size = UDim2.new(0, 40, 0, 40)
-    toggle_Image.Image = ""
+    toggle_Image.Image = "http://www.roblox.com/asset/?id=115291470270199"
     toggle_Image.ImageColor3 = Color3.fromRGB(0, 162, 255)
 
     local minimizetog = false
@@ -731,7 +731,7 @@ function Library:CreateWindow(hubname)
                     ImageButton.BorderSizePixel = 0
                     ImageButton.Position = UDim2.new(0, 242, 0, 2)
                     ImageButton.Size = UDim2.new(0, 20, 0, 20)
-                    ImageButton.Image = "rbxassetid://115291470270199"
+                    ImageButton.Image = "rbxassetid://3926311105"
                     ImageButton.ImageRectOffset = Vector2.new(940, 784)
                     ImageButton.ImageRectSize = Vector2.new(48, 48)
 
