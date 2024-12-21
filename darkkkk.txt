@@ -278,7 +278,7 @@ function Library:CreateWindow(hubname)
     toggle_Image.BorderSizePixel = 0
     toggle_Image.Size = UDim2.new(0, 40, 0, 40)
     toggle_Image.Image = "rbxassetid://115291470270199"
-    toggle_Image.ImageColor3 = Color3.fromRGB(0, 162, 255)
+    toggle_Image.ImageColor3 = Color3.fromRGB(255, 255, 255)
 
     local minimizetog = false
     MInimize_Button.MouseButton1Click:Connect(function()
@@ -815,7 +815,7 @@ function Library:CreateWindow(hubname)
                     ImageButton.BorderSizePixel = 0
                     ImageButton.Position = UDim2.new(0, 242, 0, 1)
                     ImageButton.Size = UDim2.new(0, 21, 0, 22)
-                    ImageButton.Image = "rbxassetid://115291470270199"
+                    ImageButton.Image = "rbxassetid://14834203285"
 
                     if default then
                         for i,v in pairs(list) do
